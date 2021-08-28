@@ -28,5 +28,19 @@ public class TestAzureCloud {
 			Assert.assertTrue("test is passsed", el.isDisplayed());
 		
 	}
+	
+	@Test
+	public void validatePageTitle() throws InterruptedException {
+		
+		System.out.println("Page title is: "+ dr.getTitle());
+		
+	}
+	
+	@Test
+	public void validatePageUrl() throws InterruptedException {
+		
+		System.out.println("Page url is: "+ dr.getCurrentUrl());
+		
+	}
 
 }
