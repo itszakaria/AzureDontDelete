@@ -20,7 +20,10 @@ public class TestAzureCloud {
 		
 		Thread.sleep(2000L);
 		
+		System.out.println(dr.getTitle());
+		
 		WebElement el = dr.findElement(By.xpath("//*[text()='Sign in']"));
+		
 		if(el.isDisplayed())
 			Assert.assertTrue("test is passsed", el.isDisplayed());
 		
