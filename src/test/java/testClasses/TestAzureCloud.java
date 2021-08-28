@@ -12,11 +12,13 @@ public class TestAzureCloud {
 	WebDriver dr;
 	
 	@Test
-	public void testAzureCloud() {
+	public void testAzureCloud() throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", "C:/lib_drivers/chromedriver.exe");
 		dr = new ChromeDriver();
 		
 		dr.get("https://dev.azure.com/itszakariabd");
+		
+		Thread.sleep(2000L);
 		
 		WebElement el = dr.findElement(By.xpath("//*[text()='Sign in']"));
 		if(el.isDisplayed())
