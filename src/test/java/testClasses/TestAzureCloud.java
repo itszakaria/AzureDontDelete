@@ -13,7 +13,7 @@ public class TestAzureCloud {
 	
 	@Test
 	public void testAzureCloud() throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "C:/lib_drivers/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 		dr = new ChromeDriver();
 		
 		dr.get("https://dev.azure.com/itszakariabd");
